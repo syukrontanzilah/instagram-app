@@ -1,14 +1,17 @@
-import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
+import ProfilePicture from '../../component/ProfilePicture'
+import Story from '../../component/Story'
+import Stories from '../../component/Stories'
 
-class Home extends Component {
-    render(){
-        return(
-            <View>
-                <Text>home page</Text>
-            </View>
-        )
-    }
+const Home = () => {
+    return (
+        <View>
+         <Stories/>
+        </View>
+    )
 }
 
-export default Home;
+export default Home
+
+const styles = StyleSheet.create({})

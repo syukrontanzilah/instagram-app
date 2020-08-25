@@ -5,6 +5,7 @@ import {
   ScrollView,
   View,
   Text,
+  StatusBar
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import Router from './router';
@@ -13,9 +14,12 @@ import { Home } from './pages';
 const App = () => {
 
   return (
-    <NavigationContainer>
-      <Home/>
-    </NavigationContainer>
+    <>
+      <StatusBar barStyle="dark-content" />
+      <SafeAreaView>
+        <Home />
+      </SafeAreaView>
+    </>
   )
 
 }
